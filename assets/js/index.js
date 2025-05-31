@@ -23,3 +23,30 @@ for (let i = 25; i >= 0; i--) {
   console.log(i);
 }
 console.groupEnd();
+
+// 2 Вивести числа від 10 до 50, які кратні 5.
+// while
+let secondWhile = 10;
+console.group('From 10 to 50, with while loop');
+while (secondWhile <= 50) {
+  console.log(secondWhile);
+  secondWhile += 5;
+}
+console.groupEnd();
+
+// do...while
+
+let secondDoWhile = 10;
+console.group('From 10 to 50, with do...while loop');
+do {
+  console.log(secondDoWhile);
+  secondDoWhile += 5;
+} while (secondDoWhile <= 50);
+console.groupEnd();
+
+// for
+console.group('From 10 to 50, with for loop');
+for (let i = 10; i <= 50; i += 5) {
+  console.log(i);
+}
+console.groupEnd();
