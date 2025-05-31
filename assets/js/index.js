@@ -50,3 +50,30 @@ for (let i = 10; i <= 50; i += 5) {
   console.log(i);
 }
 console.groupEnd();
+
+// 3. *Знайти суму чисел в межах від 1 до 100.
+
+//while
+let i = 1;
+let sumWhile = 0;
+while (i <= 100) {
+  sumWhile += i;
+  i++;
+}
+console.log('Сума чисел в межах від 1 до 100 з while', sumWhile);
+
+//do...while
+let j = 1;
+let sumDoWhile = 0;
+do {
+  sumDoWhile += j;
+  j++;
+} while (j <= 100);
+console.log('Сума чисел в межах від 1 до 100 з do...while', sumDoWhile);
+
+//for
+let forResult = 0;
+for (let i = 1; i <= 100; i++) {
+  forResult += i;
+}
+console.log('Сума чисел в межах від 1 до 100 з for', forResult);
